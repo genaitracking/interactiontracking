@@ -1,0 +1,38 @@
+{
+  "id": "statement-uuid-1122",
+  "actor": {
+    "mbox": "mailto:educator@example.com",
+    "name": "Educator Name"
+  },
+  "verb": {
+    "id": "http://example.com/verbs/classified",
+    "display": { "en-US": "classified" }
+  },
+  "object": {
+    "id": "statement-uuid-5678",
+    "objectType": "StatementRef"
+  },
+  "result": {
+    "extensions": {
+      "http://example.com/extensions/classification": {
+        "category": "Critical Thinking",
+        "level": "Needs Improvement"
+      }
+    }
+  },
+  "context": {
+    "contextActivities": {
+      "category": [
+        {
+          "id": "model-uuid-1234",
+          "definition": {
+            "type": "http://example.com/activities/classification-model",
+            "name": { "en-US": "Critical Thinking Classifier" },
+            "description": { "en-US": "An ONNX model that classifies text for critical thinking indicators." }
+          }
+        }
+      ]
+    }
+  },
+  "timestamp": "2023-09-14T13:00:00Z"
+}
