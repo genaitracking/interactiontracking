@@ -1,0 +1,26 @@
+{
+  "id": "statement-uuid-1000",
+  "actor": {
+    "mbox": "mailto:system@example.com",
+    "name": "System"
+  },
+  "verb": {
+    "id": "http://adlnet.gov/expapi/verbs/initialized",
+    "display": { "en-US": "initialized" }
+  },
+  "object": {
+    "id": "prompt-uuid-1234",
+    "definition": {
+      "type": "http://adlnet.gov/expapi/activities/prompt",
+      "name": { "en-US": "System Prompt" },
+      "description": { "en-US": "System prompt for LLM." },
+      "extensions": {
+        "http://example.com/extensions/prompt": {
+          "prompt": "You are a tutor helping students understand calculus concepts.",
+          "model": "GPT-4o"
+        }
+      }
+    }
+  },
+  "timestamp": "2023-09-14T10:00:00Z"
+}
