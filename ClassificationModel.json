@@ -1,0 +1,14 @@
+{
+  "id": "model-uuid-1234",
+  "name": "Critical Thinking Classifier",
+  "description": "An ONNX model that classifies text for critical thinking indicators.",
+  "type": "http://example.com/activities/classification-model",
+  "modelType": "ONNX",
+  "version": "1.0",
+  "uploadedBy": {
+    "mbox": "mailto:educator@example.com",
+    "name": "Educator Name"
+  },
+  "uploadDate": "2023-09-14T09:00:00Z",
+  "sharingOptions": "public"
+}
