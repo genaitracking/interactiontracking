@@ -1,0 +1,37 @@
+{
+  "id": "statement-uuid-5678",
+  "actor": {
+    "mbox": "mailto:student@example.com",
+    "name": "Student Name"
+  },
+  "verb": {
+    "id": "http://adlnet.gov/expapi/verbs/asked",
+    "display": { "en-US": "asked" }
+  },
+  "object": {
+    "id": "urn:x-genai:chatbot:message",
+    "definition": {
+      "type": "http://adlnet.gov/expapi/activities/message",
+      "name": { "en-US": "Chatbot Message" },
+      "description": { "en-US": "Message sent in chatbot interaction." }
+    }
+  },
+  "result": {
+    "response": "Can you explain the concept of limits in calculus?"
+  },
+  "context": {
+    "contextActivities": {
+      "parent": [
+        {
+          "id": "prompt-uuid-1234",
+          "definition": {
+            "type": "http://adlnet.gov/expapi/activities/prompt",
+            "name": { "en-US": "System Prompt" },
+            "description": { "en-US": "System prompt for LLM." }
+          }
+        }
+      ]
+    }
+  },
+  "timestamp": "2023-09-14T10:01:00Z"
+}
