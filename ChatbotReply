@@ -1,0 +1,41 @@
+{
+  "id": "statement-uuid-5679",
+  "actor": {
+    "mbox": "mailto:chatbot@example.com",
+    "name": "Chatbot Tutor"
+  },
+  "verb": {
+    "id": "http://adlnet.gov/expapi/verbs/responded",
+    "display": { "en-US": "responded" }
+  },
+  "object": {
+    "id": "urn:x-genai:chatbot:message",
+    "definition": {
+      "type": "http://adlnet.gov/expapi/activities/message",
+      "name": { "en-US": "Chatbot Message" },
+      "description": { "en-US": "Message sent in chatbot interaction." }
+    }
+  },
+  "result": {
+    "response": "Certainly! In calculus, a limit is the value that a function approaches as the input approaches some value..."
+  },
+  "context": {
+    "contextActivities": {
+      "parent": [
+        {
+          "id": "prompt-uuid-1234",
+          "definition": {
+            "type": "http://adlnet.gov/expapi/activities/prompt",
+            "name": { "en-US": "System Prompt" },
+            "description": { "en-US": "System prompt for LLM." }
+          }
+        }
+      ]
+    },
+    "statement": {
+      "id": "statement-uuid-5678",
+      "objectType": "StatementRef"
+    }
+  },
+  "timestamp": "2023-09-14T10:02:00Z"
+}
